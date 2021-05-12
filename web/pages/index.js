@@ -2,46 +2,51 @@ import { getClient } from 'utils/sanity'
 import { configQuery } from 'utils/queries'
 import Head from 'next/head'
 import groq from 'groq'
-import Link from 'next/link'
 
 import Layout from 'components/Layout'
 import Seo from 'components/Seo'
 import Container from 'components/Container'
 
+import Hero from 'components/landing/Hero'
+import Story from 'components/landing/Story'
+import Projects from 'components/landing/Projects'
+
 const query = groq`
-  *[_type == 'post']
+  *[_type == 'landing'][0] {
+    ...,
+    projects {
+      ...,
+      projects[] {
+        ...,
+        'title': reference->title,
+        'slug': reference->slug.current,
+        'mainImage': reference->mainImage,
+        'gallery': reference->gallery
+      }
+    },
+  }
 `
 
-const Landing = ({ docs, config }) => {
+const Landing = ({ doc, config }) => {
   return (
     <Layout>
       <Seo config={config} />
-      {docs && docs.length > 0 &&
-        <section>
-          <Container>
-            <ul className='list-disc'>
-              {docs.map(doc => {
-                return (
-                  <li key={doc._id}>
-                    <Link href={`/${doc.slug.current}`} >
-                      <a className='underline'>{doc.title}</a>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          </Container>
-        </section>
+      {doc &&
+        <>
+          <Hero data={doc.hero} />
+          <Story data={doc.story} />
+          <Projects data={doc.projects} />
+        </>
       }
     </Layout>
   )
 }
 
 export const getStaticProps = async () => {
-  const docs = await getClient(true).fetch(query)
+  const doc = await getClient(true).fetch(query)
   const config = await getClient().fetch(configQuery)
   return {
-    props: { docs, config } // will be passed to the page component as props
+    props: { doc, config } // will be passed to the page component as props
   }
 }
 
