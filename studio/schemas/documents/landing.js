@@ -49,6 +49,9 @@ export default {
     story: {
       heading: 'Story',
     },
+    projects: {
+      heading: 'Projects',
+    },
     services: {
       heading: 'Services',
     },

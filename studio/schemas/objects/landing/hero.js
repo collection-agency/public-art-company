@@ -13,7 +13,7 @@ export default {
       type: 'image',
     },
     {
-      name: 'heading',
+      name: 'headline',
       title: 'Headline',
       type: 'text',
       rows: 2,

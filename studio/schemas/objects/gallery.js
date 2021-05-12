@@ -14,7 +14,7 @@ export default {
         {
           title: 'Image',
           name: 'image',
-          type: 'imageAlt',
+          type: 'figure',
         },
       ],
       preview: {

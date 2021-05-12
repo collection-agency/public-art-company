@@ -20,7 +20,17 @@ export default {
     {
       name: 'logos',
       title: 'Client Logos',
-      type: 'gallery',
+      type: 'array',
+      options: {
+        layout: 'grid',
+      },
+      of: [
+        {
+          title: 'Logo',
+          name: 'image',
+          type: 'image',
+        },
+      ],
     },
   ],
 }
