@@ -10,7 +10,7 @@ const ProjectList = ({ docs, setSectionHeadline, headline }) => {
     <div className='w-container mx-auto'>
       <div className='flex flex-wrap -mx-4'>
         {docs.map((doc, index) => {
-          const { title, slug, mainImage } = doc
+          const { _key, title, slug, mainImage } = doc
 
           let isThirds
 
@@ -34,6 +34,7 @@ const ProjectList = ({ docs, setSectionHeadline, headline }) => {
 
           return (
             <div
+              key={_key}
               className={`px-4 w-full mb-8 ${(isThirds ? 'md:w-1/3' : 'md:w-1/2')}`}
               onMouseEnter={() => setSectionHeadline(title)}
               onMouseLeave={() => setSectionHeadline(headline)}>
