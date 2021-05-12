@@ -8,8 +8,10 @@ import {
 // them from being listed twice
 const hiddenDocTypes = listItem =>
   ![
+    'config',
+    'landing',
+    'project',
     'post',
-    'site-config'
   ].includes(listItem.getId())
 
 export default () =>
@@ -17,19 +19,31 @@ export default () =>
     .title('Site')
     .items([
       S.listItem()
-        .title('Posts')
+        .title('Landing')
         .icon(MdDashboard)
-        .schemaType('post')
-        .child(S.documentTypeList('post').title('Posts')),
+        .child(
+          S.document()
+            .id('landing')
+            .schemaType('landing')
+            .documentId('landing')
+            .title('Landing')
+        ),
 
       S.listItem()
-        .title('Site config')
+        .title('Projects')
+        .icon(MdDashboard)
+        .schemaType('project')
+        .child(S.documentTypeList('project').title('Projects')),
+
+      S.listItem()
+        .title('Site Config')
         .icon(MdSettings)
         .child(
-          S.editor()
+          S.document()
             .id('config')
-            .schemaType('site-config')
-            .documentId('global-config')
+            .schemaType('config')
+            .documentId('config')
+            .title('Site Config')
         ),
 
       ...S.documentTypeListItems().filter(hiddenDocTypes),
