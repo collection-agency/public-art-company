@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "Starter"
-  },
   "api": {
-    "projectId": "3lugmt1t",
+    "projectId": "t3q3rp1x",
     "dataset": "production"
+  },
+  "project": {
+    "name": "Public Art Co."
   },
   "plugins": [
     "@sanity/base",
@@ -16,6 +16,10 @@
   ],
   "env": {
     "development": {
+      "api": {
+        "projectId": "t3q3rp1x",
+        "dataset": "staging"
+      },
       "plugins": [
         "@sanity/vision"
       ]
