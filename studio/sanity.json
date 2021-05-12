@@ -5,7 +5,7 @@
     "dataset": "production"
   },
   "project": {
-    "name": "Public Art Co."
+    "name": "Public Art Company"
   },
   "plugins": [
     "@sanity/base",
