@@ -13,6 +13,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'headline',
+      title: 'Headline',
+      type: 'string',
+    },
+    {
       title: 'Projects',
       name: 'projects',
       type: 'array',
