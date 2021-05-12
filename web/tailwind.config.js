@@ -5,10 +5,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      width: {
+        'container': '90%',
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+    },
   },
   corePlugins: {
     container: false,
