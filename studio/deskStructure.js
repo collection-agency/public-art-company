@@ -11,7 +11,7 @@ const hiddenDocTypes = listItem =>
     'config',
     'landing',
     'project',
-    'post',
+    //'post',
   ].includes(listItem.getId())
 
 export default () =>

@@ -6,7 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Import documents
 import landing from './documents/landing'
-import post from './documents/post'
+//import post from './documents/post'
 import project from './documents/project'
 import config from './documents/config'
 
@@ -53,7 +53,7 @@ export default createSchema({
     landingServices,
     link,
     portableText,
-    post,
+    //post,
     project,
     seoMeta,
     simplePortableText,

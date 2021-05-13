@@ -8,7 +8,7 @@ export default {
   type: 'reference',
   description: 'Locate a document you want to link to',
   to: [
-    { type: 'post' },
+    { type: 'project' },
   ],
   blockEditor: {
     icon: () => '🔗',

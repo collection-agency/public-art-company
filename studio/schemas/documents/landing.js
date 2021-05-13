@@ -2,6 +2,7 @@ export default {
   name: 'landing',
   type: 'document',
   title: 'Landing',
+  __experimental_actions: ['update', 'publish'],
   fields: [
     {
       name: 'hero',

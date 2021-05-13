@@ -2,8 +2,7 @@ export default {
   name: 'config',
   type: 'document',
   title: 'Site Config',
-  // https://www.sanity.io/docs/experimental/ui-affordances-for-actions
-  //__experimental_actions: ['update', 'publish'],
+  __experimental_actions: ['update', 'publish'],
   fieldsets: [
   ],
   fields: [
@@ -86,11 +85,4 @@ export default {
     siteTitle: 'Public Art Company',
     siteUrl: 'https://publicartcompany.com'
   },
-  preview: {
-    prepare() {
-      return {
-        title: 'Global site config',
-      }
-    }
-  }
 };
