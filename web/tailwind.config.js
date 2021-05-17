@@ -8,6 +8,10 @@ module.exports = {
       width: {
         'container': '90%',
       },
+      colors: {
+        'cream': '#F2F0EC',
+        'dark-gray': '#424242',
+      },
     },
   },
   variants: {
