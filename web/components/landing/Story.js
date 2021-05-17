@@ -17,7 +17,9 @@ const Story = ({ data }) => {
               <h2 className='uppercase'>{heading}</h2>
             </div>
             <div className='px-8'>
-              <PortableText blocks={text} renderContainerOnSingleChild />
+              {text &&
+                <PortableText blocks={text} renderContainerOnSingleChild />
+              }
             </div>
           </div>
           <div className='px-8'><img src={imageUrl(image, 700, 700)} /></div>

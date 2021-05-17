@@ -40,8 +40,8 @@ const ProjectList = ({ docs, setSectionHeadline, headline }) => {
                 style={{
                   backgroundImage: `url(${imageUrl(mainImage, 700, 500)})`
                 }}
-                onMouseEnter={() => setSectionHeadline(title)}
-                onMouseLeave={() => setSectionHeadline(headline)}></div>
+                onMouseEnter={() => {/*setSectionHeadline(title)*/}}
+                onMouseLeave={() => {/*setSectionHeadline(headline)*/}}></div>
             </div>
           )
         })}

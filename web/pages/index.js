@@ -10,6 +10,7 @@ import Container from 'components/Container'
 import Hero from 'components/landing/Hero'
 import Story from 'components/landing/Story'
 import Projects from 'components/landing/Projects'
+import Services from 'components/landing/Services'
 
 const query = groq`
   *[_type == 'landing'][0] {
@@ -36,6 +37,7 @@ const Landing = ({ doc, config }) => {
           <Hero data={doc.hero} />
           <Story data={doc.story} />
           <Projects data={doc.projects} />
+          <Services data={doc.services} />
         </>
       }
     </Layout>
