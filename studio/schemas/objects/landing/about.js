@@ -10,8 +10,7 @@ export default {
     {
       name: 'text',
       title: 'Text',
-      type: 'text',
-      rows: 3,
+      type: 'simplePortableText',
     },
   ],
 }

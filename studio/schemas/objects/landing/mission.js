@@ -15,8 +15,7 @@ export default {
     {
       name: 'intro',
       title: 'Intro',
-      type: 'text',
-      rows: 3,
+      type: 'simplePortableText',
     },
     {
       name: 'image',
@@ -26,8 +25,7 @@ export default {
     {
       name: 'outro',
       title: 'Outro',
-      type: 'text',
-      rows: 3,
+      type: 'simplePortableText',
     },
   ],
 }

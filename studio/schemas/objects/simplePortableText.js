@@ -8,7 +8,7 @@ export default {
       type: 'block',
       styles: [],
       lists: [
-        {title: 'Bullet', value: 'bullet'},
+//        {title: 'Bullet', value: 'bullet'},
       ],
       marks: {
         decorators: [
