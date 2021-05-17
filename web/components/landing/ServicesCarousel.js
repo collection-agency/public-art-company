@@ -19,7 +19,7 @@ const ServicesCarousel = ({ items }) => {
   }
 
   return (
-    <div className='min-w-0 md:flex'>
+    <div className='min-w-0 md:flex px-8'>
       <div className='md:w-1/2'>
         <Swiper
           onSwiper={setControlledSwiper}
@@ -29,7 +29,7 @@ const ServicesCarousel = ({ items }) => {
           {items.map(item => {
             const { _key, text } = item
             return (
-              <SwiperSlide key={`${_key}_b`} className='swiper-no-swiping'>
+              <SwiperSlide key={`${_key}_b`} className='swiper-no-swiping pt-20'>
                 {text &&
                   <PortableText blocks={text}  />
                 }

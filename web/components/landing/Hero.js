@@ -53,7 +53,7 @@ const Hero = ({ data }) => {
       },
       {
         paddingTop: '100vh',
-        color: '#000000',
+        color: '#424242',
         scrollTrigger: {
           scrub: true,
           start: 0,
@@ -86,7 +86,7 @@ const Hero = ({ data }) => {
       }}></div>
       <div className='relative'>
         <div id='hero-logo' className='text-white text-5xl'><span>Public Art Co.</span></div>
-        <div id='hero-headline' className='text-3xl'><p>{headline}</p></div>
+        <div id='hero-headline' className='text-3xl uppercase'><p>{headline}</p></div>
         <div id='hero-intro' className='text-2xl pb-40'><p>{intro}</p></div>
       </div>
     </section>
