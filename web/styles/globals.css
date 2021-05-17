@@ -9,6 +9,7 @@
 @import 'swiper.css';
 
 html, body {
+  @apply bg-cream text-dark-gray;
   font-size: 14px;
 }
 
@@ -28,21 +29,32 @@ html, body {
 .portable-text a:link {
   @apply underline;
 }
-/*
-@screen sm {
 
+.logo-marquee-wrapper > div > div {
+  @apply flex items-center;
+}
+
+.client-logo {
+  max-width: 100px;
+  max-height: 70px;
+}
+
+#footer {
+  background-color: 'rgb(66, 66, 66)';
 }
 
 @screen md {
-
-}
-
-@screen lg {
-
+  .client-logo {
+    max-width: 150px;
+    max-height: 105px;
+  }
 }
 
 @screen xl {
-
+  .client-logo {
+    max-width: 200px;
+    max-height: 140px;
+  }
 }
-*/
+
 @tailwind utilities;
