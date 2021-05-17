@@ -2,7 +2,7 @@ export default {
   name: 'config',
   type: 'document',
   title: 'Site Config',
-  __experimental_actions: ['update', 'publish'],
+  //__experimental_actions: ['update', 'publish'],
   fieldsets: [
   ],
   fields: [
