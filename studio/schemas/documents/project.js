@@ -26,6 +26,11 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'body',
+      title: 'Body',
+      type: 'simplePortableText',
+    },
+    {
       name: 'gallery',
       title: 'Image Gallery',
       type: 'gallery',
