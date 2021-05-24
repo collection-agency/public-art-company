@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { PortableText } from 'utils/sanity'
 
-import ProjectList from './ProjectList'
+import ProjectList from '../project/ProjectList'
 
 const Projects = ({ data }) => {
   if (!data)

@@ -21,10 +21,10 @@ const ProjectModal = ({ doc, isActive, closeModal }) => {
       leave='transition-transform transition-transform duration-1000'
       leaveFrom='transform -translate-x-0'
       leaveTo='transform -translate-x-full'
-      className='fixed inset-0 bg-white z-50 overflow-scroll md:overflow-hidden'
+      className='fixed inset-0 bg-white z-50 overflow-y-scroll overflow-x-hidden'
       afterEnter={() => swiperRef.current.swiper.update()}
     >
-      <div className='w-container mx-auto md:flex md:flex-col md:h-full'>
+      <div className='w-container mx-auto'>
         <div className='flex items-center mb-12 pt-2'>
           <div className='md:w-1/3'>
             <CgArrowLongLeft className='cursor-pointer w-10 h-auto text-dark-gray hover:text-black' onClick={closeModal}/>
@@ -34,14 +34,14 @@ const ProjectModal = ({ doc, isActive, closeModal }) => {
           </div>
           <div className='w-1/3 hidden md:block'>&nbsp;</div>
         </div>
-        <div className='flex flex-wrap lg:flex-nowrap -mx-8 mb-20'>
+        <div className='flex flex-wrap lg:flex-nowrap -mx-6 mb-20'>
           {title &&
-            <div className='w-full lg:w-1/4 xl:w-1/3 mb-12 px-8'>
+            <div className='w-full lg:w-1/5 2xl:w-1/3 mb-12 px-6'>
               <h1 className='uppercase'>{title}</h1>
             </div>
           }
           {body &&
-            <div className='w-full lg:w-3/4 xl:w-2/3 px-8'>
+            <div className='w-full lg:w-4/5 2xl:w-2/3 px-6'>
               <PortableText blocks={body} renderContainerOnSingleChild className='sm:text-columns-2' />
             </div>
           }

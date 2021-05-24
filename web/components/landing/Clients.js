@@ -16,7 +16,7 @@ const Clients = ({ data }) => {
             <h2 className='uppercase'>{heading}</h2>
           </div>
           {text &&
-            <PortableText blocks={text} className='px-8 md:w-1/2 lg:w-1/3 xl:w-1/4' renderContainerOnSingleChild />
+            <PortableText blocks={text} className='px-8 md:w-1/2 xl:w-2/5 2xl:w-1/4' renderContainerOnSingleChild />
           }
         </div>
       </div>
