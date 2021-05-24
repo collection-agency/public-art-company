@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa'
-import Container from 'components/Container'
 import { PortableText, urlFor } from 'utils/sanity'
 
 const Footer = ({ config }) => {
   if (!config)
     return null
-    
+
   const {
     social,
     contactEmail,
@@ -15,7 +14,7 @@ const Footer = ({ config }) => {
 
   return (
     <footer className='bg-dark-gray text-white py-20'>
-      <Container>
+      <div className='w-container mx-auto'>
         <div className='pb-10 border-b border-white mb-6'>
           <div className='flex justify-between -mx-6'>
             <div className='max-w-400 px-6'>
@@ -67,7 +66,7 @@ const Footer = ({ config }) => {
             </div>
           }
         </div>
-      </Container>
+      </div>
     </footer>
   )
 };
