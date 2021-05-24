@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import ProjectItem from 'components/landing/ProjectItem'
+import ProjectItem from './ProjectItem'
 
 const ProjectList = ({ docs, setSectionHeadline, headline }) => {
   const router = useRouter()

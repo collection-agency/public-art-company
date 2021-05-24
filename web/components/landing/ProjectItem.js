@@ -1,5 +1,5 @@
 import { imageUrl } from 'utils/helpers'
-import ProjectModal from 'components/landing/ProjectModal'
+import ProjectModal from './ProjectModal'
 
 const ProjectItem = ({ doc, isThirds, activeSlug, closeModal, openModal }) => {
   const { title, slug, mainImage } = doc

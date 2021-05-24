@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Transition } from '@headlessui/react'
 import { PortableText } from 'utils/sanity'
 import { CgArrowLongLeft } from 'react-icons/cg'
-import ProjectCarousel from 'components/landing/ProjectCarousel'
+import ProjectCarousel from './ProjectCarousel'
 
 const ProjectModal = ({ doc, isActive, closeModal }) => {
   const [galleryActive, setGalleryActive] = useState(false)
