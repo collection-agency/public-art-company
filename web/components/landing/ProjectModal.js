@@ -1,27 +1,30 @@
+import { useRef } from 'react'
 import Head from 'next/head'
-import { useState } from 'react'
 import { Transition } from '@headlessui/react'
 import { PortableText } from 'utils/sanity'
 import { CgArrowLongLeft } from 'react-icons/cg'
 import ProjectCarousel from './ProjectCarousel'
 
 const ProjectModal = ({ doc, isActive, closeModal }) => {
-  const [galleryActive, setGalleryActive] = useState(false)
+  const swiperRef = useRef(null)
+
   const { title, body, gallery } = doc
 
   return (
     <Transition
       appear={true}
+      unmount={false}
       show={isActive}
-      enter='transition-transform duration-500'
+      enter='transition-transform duration-1000'
       enterFrom='transform translate-x-full'
       enterTo='transform translate-x-0'
-      leave='transition-transform duration-700'
-      leaveFrom='transform translate-x-0'
+      leave='transition-transform transition-transform duration-1000'
+      leaveFrom='transform -translate-x-0'
       leaveTo='transform -translate-x-full'
-      className='fixed inset-0 bg-white z-50'
+      className='fixed inset-0 bg-white z-50 overflow-hidden'
+      afterEnter={() => swiperRef.current.swiper.update()}
     >
-      <div className='w-container mx-auto mb-20'>
+      <div className='w-container mx-auto flex flex-col h-full'>
         <div className='flex items-center mb-12 pt-2'>
           <div className='md:w-1/3'>
             <CgArrowLongLeft className='w-10 h-auto text-dark-gray hover:text-black' onClick={closeModal}/>
@@ -43,11 +46,9 @@ const ProjectModal = ({ doc, isActive, closeModal }) => {
             </div>
           }
         </div>
-        <div>
-          {gallery && gallery.length > 0 &&
-            <ProjectCarousel gallery={gallery} setGalleryActive={setGalleryActive} />
-          }
-        </div>
+        {gallery && gallery.length > 0 &&
+          <ProjectCarousel swiperRef={swiperRef} gallery={gallery} />
+        }
       </div>
     </Transition>
   )

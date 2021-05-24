@@ -56,6 +56,11 @@ html, body {
   @apply bg-opacity-100;
 }
 
+.project-carousel-image {
+  height: auto;
+  width: 100%;
+}
+
 #footer {
   background-color: 'rgb(66, 66, 66)';
 }
@@ -64,6 +69,11 @@ html, body {
   .client-logo {
     max-width: 150px;
     max-height: 105px;
+  }
+
+  .project-carousel-image {
+    height: 300px;
+    width: auto;
   }
 }
 
@@ -75,12 +85,26 @@ html, body {
   .swiper-pagination-bullet {
     @apply w-8 h-8 mx-2;
   }
+
+  .project-carousel-image {
+    height: 250px;
+  }
 }
 
 @screen xl {
   .client-logo {
     max-width: 200px;
     max-height: 140px;
+  }
+
+  .project-carousel-image {
+    height: 300px;
+  }
+}
+
+@screen 2xl {
+  .project-carousel-image {
+    height: 400px;
   }
 }
 
