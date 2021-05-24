@@ -25,6 +25,7 @@ const query = groq`
         'title': reference->title,
         'slug': reference->slug.current,
         'mainImage': reference->mainImage,
+        'body': reference->body,
         'gallery': reference->gallery
       }
     },

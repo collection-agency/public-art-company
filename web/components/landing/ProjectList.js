@@ -1,7 +1,44 @@
-import { imageUrl } from 'utils/helpers'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
+import ProjectItem from './ProjectItem'
+
 const ProjectList = ({ docs, setSectionHeadline, headline }) => {
+  const router = useRouter()
+  const { pathname, query } = router
+
   if (!docs || docs.length === 0)
     return null
+
+  const updateQuery = slug => {
+    let newQuery = router.query
+
+    if (slug === undefined) {
+      delete newQuery['project']
+    } else {
+      newQuery['project'] = slug
+    }
+
+    router.push({
+      pathname,
+      query: newQuery,
+    }, undefined, { shallow: true });
+  }
+
+  const closeProject = () => {
+    const queryCopy = queryCopy
+    delete queryCopy['project']
+    router.push({
+      pathname,
+      query: {
+        ...query,
+        'project': slug
+      },
+    }, undefined, { shallow: true });
+  }
+
+  useEffect(() => {
+    console.log(router.query.project)
+  }, [router.query.project])
 
   let wasThirds = true
   let k = 0
@@ -29,22 +66,13 @@ const ProjectList = ({ docs, setSectionHeadline, headline }) => {
   return (
     <div className='w-container mx-auto'>
       <div className='flex flex-wrap -mx-4'>
-        {docs.map((doc, index) => {
-          const { _key, title, slug, mainImage } = doc
-          return (
-            <div
-              key={_key}
-              className={`px-4 w-full mb-8 ${(isThirds() ? 'md:w-1/3' : 'md:w-1/2')}`}>
-              <div
-                className='cursor-pointer h-72 bg-cover bg-center'
-                style={{
-                  backgroundImage: `url(${imageUrl(mainImage, 700, 500)})`
-                }}
-                onMouseEnter={() => {/*setSectionHeadline(title)*/}}
-                onMouseLeave={() => {/*setSectionHeadline(headline)*/}}></div>
-            </div>
-          )
-        })}
+        {docs.map((doc, index) => <ProjectItem
+          key={doc._key}
+          doc={doc}
+          isThirds={() => isThirds()}
+          activeSlug={router.query.project}
+          openModal={() => updateQuery(doc.slug)}
+          closeModal={() => updateQuery()} /> )}
       </div>
     </div>
   )
