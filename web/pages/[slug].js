@@ -13,7 +13,7 @@ const query = groq`
 
 const Post = ({ doc, config, preview }) => {
   return (
-    <Layout>
+    <Layout config={config}>
       <Seo config={config} doc={doc} />
       {doc &&
         <section>

@@ -4,6 +4,9 @@ import Container from 'components/Container'
 import { PortableText, urlFor } from 'utils/sanity'
 
 const Footer = ({ config }) => {
+  if (!config)
+    return null
+    
   const {
     social,
     contactEmail,
