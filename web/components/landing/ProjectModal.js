@@ -27,7 +27,7 @@ const ProjectModal = ({ doc, isActive, closeModal }) => {
       <div className='w-container mx-auto md:flex md:flex-col md:h-full'>
         <div className='flex items-center mb-12 pt-2'>
           <div className='md:w-1/3'>
-            <CgArrowLongLeft className='w-10 h-auto text-dark-gray hover:text-black' onClick={closeModal}/>
+            <CgArrowLongLeft className='cursor-pointer w-10 h-auto text-dark-gray hover:text-black' onClick={closeModal}/>
           </div>
           <div className='flex-1 text-center'>
             <span>Public Art Co.</span>

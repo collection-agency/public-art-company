@@ -39,7 +39,10 @@ const ProjectCarousel = ({ gallery, swiperRef }) => {
           const {_key, image} = item
           return (
             <SwiperSlide key={_key} className={`w-auto ${index + 1 === gallery.length ? '' : 'md:pr-12'} ${isMobile ? 'swiper-no-swiping' : ''}`}>
-              <img src={urlFor(image).url()} className='cursor-pointer mb-12 md:mb-0' onClick={() => setActiveGallery(_key)} />
+              <img
+                src={urlFor(image).url()}
+                className='cursor-pointer mb-12 md:mb-0 h-auto w-full md:h-300 md:w-auto lg:h-250 xl:h-300 2xl:h-400' 
+                onClick={() => setActiveGallery(_key)} />
             </SwiperSlide>
           )
         })}

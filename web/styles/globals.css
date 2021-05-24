@@ -60,11 +60,6 @@ html, body {
   @apply block;
 }
 
-.project-carousel img {
-  height: auto;
-  width: 100%;
-}
-
 #footer {
   background-color: 'rgb(66, 66, 66)';
 }
@@ -78,11 +73,6 @@ html, body {
   .project-carousel .swiper-wrapper {
     @apply flex;
   }
-
-  .project-carousel img {
-    height: 300px;
-    width: auto;
-  }
 }
 
 @screen lg {
@@ -93,10 +83,6 @@ html, body {
   .swiper-pagination-bullet {
     @apply w-8 h-8 mx-2;
   }
-
-  .project-carousel img {
-    height: 250px;
-  }
 }
 
 @screen xl {
@@ -104,16 +90,10 @@ html, body {
     max-width: 200px;
     max-height: 140px;
   }
-
-  .project-carousel img {
-    height: 300px;
-  }
 }
 
 @screen 2xl {
-  .project-carousel img {
-    height: 400px;
-  }
+
 }
 
 @tailwind utilities;

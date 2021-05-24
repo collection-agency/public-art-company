@@ -9,6 +9,9 @@ module.exports = {
         'container': '90%',
       },
       height: {
+        200: '200px',
+        250: '250px',
+        300: '300px',
         400: '400px',
         500: '500px',
         600: '600px',
