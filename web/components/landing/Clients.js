@@ -12,7 +12,7 @@ const Clients = ({ data }) => {
     <section className='py-20'>
       <div className='w-container mx-auto mb-20'>
         <div className='-mx-8 md:flex'>
-          <div className='px-8'>
+          <div className='px-8 pb-12'>
             <h2 className='uppercase'>{heading}</h2>
           </div>
           {text &&

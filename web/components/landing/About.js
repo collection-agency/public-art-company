@@ -10,9 +10,9 @@ const About = ({ data }) => {
   return (
     <section className='border-t border-black'>
       <div className='w-container mx-auto'>
-        <div className='py-20'>
+        <div className='pt-20'>
           {text &&
-            <PortableText blocks={text} className='w-1/2 mx-auto' renderContainerOnSingleChild />
+            <PortableText blocks={text} className='text-center w-5/6 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto' renderContainerOnSingleChild />
           }
         </div>
       </div>

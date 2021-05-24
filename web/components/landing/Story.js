@@ -12,8 +12,8 @@ const Story = ({ data }) => {
     <section className='border-t border-black'>
       <div className='md:w-container md:mx-auto'>
         <div className='flex flex-col md:flex-row -mx-8 md:items-center'>
-          <div className='w-container mx-auto md:w-auto md:flex'>
-            <div className='px-8'>
+          <div className='w-container mx-auto md:w-auto md:flex pt-20 pb-12'>
+            <div className='px-8 pb-12'>
               <h2 className='uppercase'>{heading}</h2>
             </div>
             <div className='px-8'>

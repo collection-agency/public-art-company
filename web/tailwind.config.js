@@ -8,6 +8,12 @@ module.exports = {
       width: {
         'container': '90%',
       },
+      height: {
+        400: '400px',
+        500: '500px',
+        600: '600px',
+        700: '700px',
+      },
       colors: {
         'cream': '#F2F0EC',
         'dark-gray': '#424242',

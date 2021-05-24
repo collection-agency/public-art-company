@@ -7,6 +7,7 @@
 /* purgecss end ignore */
 
 @import 'swiper.css';
+@import 'swiper-effect-fade.css';
 
 html, body {
   @apply bg-cream text-dark-gray;
@@ -39,6 +40,22 @@ html, body {
   max-height: 70px;
 }
 
+.swiper-wrapper {
+  @apply items-stretch;
+}
+
+.swiper-pagination {
+  @apply absolute bottom-8 left-0 w-full flex z-10 h-6 justify-center;
+}
+
+.swiper-pagination-bullet {
+  @apply w-6 h-6 mx-1 border border-dark-gray rounded-full bg-white bg-opacity-50;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-opacity-100;
+}
+
 #footer {
   background-color: 'rgb(66, 66, 66)';
 }
@@ -47,6 +64,16 @@ html, body {
   .client-logo {
     max-width: 150px;
     max-height: 105px;
+  }
+}
+
+@screen lg {
+  .swiper-pagination {
+    @apply h-8;
+  }
+
+  .swiper-pagination-bullet {
+    @apply w-8 h-8 mx-2;
   }
 }
 
