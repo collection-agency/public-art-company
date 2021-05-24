@@ -22,22 +22,21 @@ const Hero = ({ data }) => {
         translateY: '0vh'
       },
       {
-        translateY: '50vh',
-        height: '40vh',
+        height: '70vh',
         scrollTrigger: {
           scrub: true,
           start: 0,
-          end: 700
+          end: 600
         }
       }
     )
     gsap.fromTo(
       element.querySelector('#hero-logo'),
       {
-        paddingTop: '30vh',
+        transform: 'translateY(0)',
       },
       {
-        paddingTop: '0vh',
+        transform: 'translateY(-50vh)',
         scrollTrigger: {
           scrub: true,
           start: 0,
@@ -48,26 +47,12 @@ const Hero = ({ data }) => {
     gsap.fromTo(
       element.querySelector('#hero-headline'),
       {
-        paddingTop: '30vh',
         color: '#FFFFFF',
+        transform: 'translateY(10vh)'
       },
       {
-        paddingTop: '100vh',
         color: '#424242',
-        scrollTrigger: {
-          scrub: true,
-          start: 0,
-          end: 400
-        }
-      }
-    )
-    gsap.fromTo(
-      element.querySelector('#hero-intro'),
-      {
-        paddingTop: '70vh',
-      },
-      {
-        paddingTop: '10vh',
+        transform: 'translateY(30vh)',
         scrollTrigger: {
           scrub: true,
           start: 0,
@@ -84,10 +69,16 @@ const Hero = ({ data }) => {
       <div id='hero-image' className='absolute top-0 left-0 right-0 bg-cover bg-center' style={{
         backgroundImage: `url(${imageUrl(image, 1920, 1080)})`,
       }}></div>
-      <div className='relative'>
-        <div id='hero-logo' className='text-white text-5xl'><span>Public Art Co.</span></div>
-        <div id='hero-headline' className='text-3xl uppercase'><p>{headline}</p></div>
-        <div id='hero-intro' className='text-2xl pb-40'><p>{intro}</p></div>
+      <div className='relative' style={{
+        paddingTop: '50vh'
+      }}>
+        <div id='hero-logo' className='text-white text-5xl absolute text-center w-full transform' style={{
+          top: '40vh',
+        }}><span>Public Art Co.</span></div>
+        <div id='hero-headline' className='text-3xl uppercase pt-24'><p>{headline}</p></div>
+        <div id='hero-intro' className='text-2xl pb-40' style={{
+          marginTop: '50vh'
+        }}><p>{intro}</p></div>
       </div>
     </section>
   )
