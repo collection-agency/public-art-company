@@ -1,12 +1,12 @@
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, config }) => {
   return (
     <div className='overflow-x-hidden'>
-      <Header />
+      <Header config={config} />
       <main>{children}</main>
-      <Footer />
+      <Footer config={config} />
     </div>
   )
 }

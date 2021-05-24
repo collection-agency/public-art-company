@@ -56,11 +56,33 @@ export default {
       ],
     },
     {
+      name: 'footer',
+      type: 'object',
+      title: 'Footer',
+      options: {
+        collapsible: true,
+        collapsed: false,
+      },
+      fields: [
+        {
+          name: 'text',
+          type: 'simplePortableText',
+          title: 'Text',
+        },
+        {
+          name: 'graphic',
+          type: 'image',
+          title: 'Graphic',
+        },
+      ]
+    },
+    {
       name: 'social',
       type: 'object',
       title: 'Social Networks',
       options: {
-        collapsible: true
+        collapsible: true,
+        collapsed: false,
       },
       fields: [
         {

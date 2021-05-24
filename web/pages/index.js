@@ -33,7 +33,7 @@ const query = groq`
 
 const Landing = ({ doc, config }) => {
   return (
-    <Layout>
+    <Layout config={config}>
       <Seo config={config} />
       {doc &&
         <>

@@ -85,3 +85,9 @@ html, body {
 }
 
 @tailwind utilities;
+
+@layer utilities {
+  .underline-under {
+    text-underline-position: under;
+  }
+}
