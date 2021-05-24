@@ -56,7 +56,11 @@ html, body {
   @apply bg-opacity-100;
 }
 
-.project-carousel-image {
+.project-carousel .swiper-wrapper {
+  @apply block;
+}
+
+.project-carousel img {
   height: auto;
   width: 100%;
 }
@@ -71,7 +75,11 @@ html, body {
     max-height: 105px;
   }
 
-  .project-carousel-image {
+  .project-carousel .swiper-wrapper {
+    @apply flex;
+  }
+
+  .project-carousel img {
     height: 300px;
     width: auto;
   }
@@ -86,7 +94,7 @@ html, body {
     @apply w-8 h-8 mx-2;
   }
 
-  .project-carousel-image {
+  .project-carousel img {
     height: 250px;
   }
 }
@@ -97,13 +105,13 @@ html, body {
     max-height: 140px;
   }
 
-  .project-carousel-image {
+  .project-carousel img {
     height: 300px;
   }
 }
 
 @screen 2xl {
-  .project-carousel-image {
+  .project-carousel img {
     height: 400px;
   }
 }

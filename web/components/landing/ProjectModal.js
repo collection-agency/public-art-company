@@ -21,10 +21,10 @@ const ProjectModal = ({ doc, isActive, closeModal }) => {
       leave='transition-transform transition-transform duration-1000'
       leaveFrom='transform -translate-x-0'
       leaveTo='transform -translate-x-full'
-      className='fixed inset-0 bg-white z-50 overflow-hidden'
+      className='fixed inset-0 bg-white z-50 overflow-scroll md:overflow-hidden'
       afterEnter={() => swiperRef.current.swiper.update()}
     >
-      <div className='w-container mx-auto flex flex-col h-full'>
+      <div className='w-container mx-auto md:flex md:flex-col md:h-full'>
         <div className='flex items-center mb-12 pt-2'>
           <div className='md:w-1/3'>
             <CgArrowLongLeft className='w-10 h-auto text-dark-gray hover:text-black' onClick={closeModal}/>
