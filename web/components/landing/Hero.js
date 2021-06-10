@@ -74,9 +74,9 @@ const Hero = ({ data }) => {
       }}>
         <div id='hero-logo' className='text-white text-5xl absolute text-center w-full transform' style={{
           top: '40vh',
-        }}><span>Public Art Co.</span></div>
-        <div id='hero-headline' className='w-container mx-auto pt-24'>
-          <p className='text-3xl uppercase font-sans'>{headline}</p>
+        }}><span className='font-sans uppercase text-8xl'>Public Art Co.</span></div>
+        <div id='hero-headline' className='w-container max-w-screen-lg mx-auto pt-24'>
+          <p className='text-7xl uppercase font-sans'>{headline}</p>
         </div>
         <div id='hero-intro' className='w-container mx-auto sm:w-3/4 md:w-1/2' style={{
           marginTop: '50vh'
