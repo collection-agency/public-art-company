@@ -29,7 +29,7 @@ const ProjectModal = ({ doc, isActive, closeModal }) => {
           <div className='md:w-1/3'>
             <CgArrowLongLeft className='cursor-pointer w-10 h-auto text-dark-gray hover:text-black' onClick={closeModal}/>
           </div>
-          <div className='flex-1 text-center'>
+          <div className='flex-1 text-center font-sans uppercase'>
             <span>Public Art Co.</span>
           </div>
           <div className='w-1/3 hidden md:block'>&nbsp;</div>
@@ -37,7 +37,7 @@ const ProjectModal = ({ doc, isActive, closeModal }) => {
         <div className='flex flex-wrap lg:flex-nowrap -mx-6 mb-20'>
           {title &&
             <div className='w-full lg:w-1/5 2xl:w-1/3 mb-12 px-6'>
-              <h1 className='uppercase'>{title}</h1>
+              <h1 className='uppercase font-sans text-xl'>{title}</h1>
             </div>
           }
           {body &&
