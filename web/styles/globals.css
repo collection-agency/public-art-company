@@ -10,7 +10,7 @@
 @import 'swiper-effect-fade.css';
 
 html, body {
-  @apply bg-cream text-dark-gray;
+  @apply font-serif bg-cream text-dark-gray;
   font-size: 14px;
 }
 
