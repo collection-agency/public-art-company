@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Founders';
+  src: url('/fonts/FoundersGrotesk-Regular.woff2') format('woff2'),
+      url('/fonts/FoundersGrotesk-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders';
+  src: url('/fonts/FoundersGrotesk-RegularItalic.woff2') format('woff2'),
+      url('/fonts/FoundersGrotesk-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quadrant';
+  src: url('/fonts/QuadrantText-Regular.woff2') format('woff2'),
+      url('/fonts/QuadrantText-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quadrant';
+  src: url('/fonts/QuadrantText-RegularItalic.woff2') format('woff2'),
+      url('/fonts/QuadrantText-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
