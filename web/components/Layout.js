@@ -1,5 +1,6 @@
 import Header from 'components/Header'
 import Footer from 'components/Footer'
+import Breakpoint from 'components/Breakpoint'
 
 const Layout = ({ children, config }) => {
   return (
@@ -7,6 +8,9 @@ const Layout = ({ children, config }) => {
       <Header config={config} />
       <main>{children}</main>
       <Footer config={config} />
+      {process.env.NODE_ENV === 'development' &&
+        <Breakpoint />
+      }
     </div>
   )
 }
