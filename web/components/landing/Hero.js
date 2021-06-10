@@ -72,9 +72,9 @@ const Hero = ({ data }) => {
       <div className='relative' style={{
         paddingTop: '50vh'
       }}>
-        <div id='hero-logo' className='text-white text-5xl absolute text-center w-full transform' style={{
+        <div id='hero-logo' className='text-white text-5xl absolute text-center w-full transform px-12' style={{
           top: '40vh',
-        }}><span className='font-sans uppercase text-8xl'>Public Art Co.</span></div>
+        }}><img src='/pac-logo-light.svg' className='max-w-screen-lg mx-auto' /></div>
         <div id='hero-headline' className='w-container max-w-screen-lg mx-auto pt-24'>
           <p className='text-7xl uppercase font-sans'>{headline}</p>
         </div>

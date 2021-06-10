@@ -18,7 +18,7 @@ const Footer = ({ config }) => {
         <div className='pb-10 border-b border-white mb-6'>
           <div className='flex justify-between -mx-6'>
             <div className='max-w-400 px-6'>
-              <div className='text-2xl uppercase mb-4'>Public Art Co.</div>
+              <div className='text-2xl uppercase mb-4'><img src='/pac-logo-light.svg' className='w-full' /></div>
               {footer && footer.text &&
                 <PortableText blocks={footer.text} renderContainerOnSingleChild className='hidden md:block'/>
               }
