@@ -16,10 +16,10 @@ const Projects = ({ data }) => {
       <div className='w-container mx-auto mb-12'>
         <div className='flex flex-col md:flex-row -mx-8'>
           <div className='px-8 pb-12'>
-            <h2 className='uppercase'>{heading}</h2>
+            <h2 className='uppercase font-sans text-lg'>{heading}</h2>
           </div>
           <div className='px-8'>
-            <span className='text-xl'>{sectionHeadline}</span>
+            <span className='font-sans text-4xl'>{sectionHeadline}</span>
           </div>
         </div>
       </div>

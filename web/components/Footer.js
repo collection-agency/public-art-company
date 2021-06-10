@@ -39,7 +39,7 @@ const Footer = ({ config }) => {
           {social && (social.instagram || social.instagram || social.facebook) &&
             <div className='flex items-center flex-wrap md:flex-nowrap'>
               <div className='w-full md:w-auto mb-2 md:mb-0pr-20 md:text-lg'>
-                <span>Stay in touch</span>
+                <span className='font-sans'>Stay in touch</span>
               </div>
               <div className='w-full md:w-auto flex items-center'>
                 {social.instagram &&
@@ -62,7 +62,7 @@ const Footer = ({ config }) => {
           }
           {contactEmail &&
             <div className='text-right'>
-              <span className='md:text-lg'>Drop us a line at <a href={`mailto:${contactEmail}`} className='underline underline-under'>{contactEmail}</a></span>
+              <span className='md:text-lg font-sans'>Drop us a line at <a href={`mailto:${contactEmail}`} className='underline underline-under'>{contactEmail}</a></span>
             </div>
           }
         </div>

@@ -13,7 +13,7 @@ const Services = ({ data }) => {
       <div className='w-container mx-auto mb-20 lg:mb-0'>
         <div className='flex flex-col lg:flex-row -mx-8'>
           <div className='px-8 pb-12 pt-20 lg:pt-24 xl:pt-28 2xl:pt-36'>
-            <h2 className='uppercase'>{heading}</h2>
+            <h2 className='uppercase font-sans text-lg'>{heading}</h2>
           </div>
           <ServicesCarousel items={services} />
         </div>

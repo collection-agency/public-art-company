@@ -12,7 +12,7 @@ const About = ({ data }) => {
       <div className='w-container mx-auto'>
         <div className='pt-20'>
           {text &&
-            <PortableText blocks={text} className='text-center w-5/6 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto' renderContainerOnSingleChild />
+            <PortableText blocks={text} className='text-center w-5/6 md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto text-4xl' renderContainerOnSingleChild />
           }
         </div>
       </div>

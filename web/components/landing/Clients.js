@@ -10,10 +10,10 @@ const Clients = ({ data }) => {
   const { heading, text, logos } = data
   return (
     <section className='py-20'>
-      <div className='w-container mx-auto mb-20'>
+      <div className='w-container mx-auto md:mb-20'>
         <div className='-mx-8 md:flex'>
           <div className='px-8 pb-12'>
-            <h2 className='uppercase'>{heading}</h2>
+            <h2 className='uppercase font-sans text-lg'>{heading}</h2>
           </div>
           {text &&
             <PortableText blocks={text} className='px-8 md:w-1/2 xl:w-2/5 2xl:w-1/4' renderContainerOnSingleChild />
