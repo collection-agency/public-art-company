@@ -32,7 +32,7 @@ const ServicesCarousel = ({ items }) => {
             return (
               <SwiperSlide key={`${_key}_b`} className='swiper-no-swiping pb-12 lg:pb-0 lg:pt-24 xl:pt-28 2xl:pt-36 bg-cream self-stretch min-h-0'>
                 {text &&
-                  <PortableText blocks={text} className='mx-auto w-full md:w-3/4 lg:w-full xl:w-4/5 2xl:w-2/3' renderContainerOnSingleChild />
+                  <PortableText blocks={text} className='mx-auto w-full md:w-3/4 lg:w-full xl:w-4/5 2xl:w-2/3 md:mb-12' renderContainerOnSingleChild />
                 }
               </SwiperSlide>
             )
@@ -40,7 +40,7 @@ const ServicesCarousel = ({ items }) => {
         </Swiper>
       </div>
 
-      <div className='h-96 md:h-400 xl:h-500 2xl:h-700 w-full lg:w-2/3 xl:w-3/5 flex flex-initial'>
+      <div className='h-96 md:h-400 xl:h-500 2xl:h-700 md:min-h-full w-full lg:w-2/3 xl:w-3/5 flex flex-initial'>
         <div className='w-16 2xl:w-24 flex flex-initial justify-center items-center pointer-events-none'>
           <div className='swiper-button-prev w-full z-10 pointer-events-auto text-center'>
             <CgArrowLeft className='mx-auto w-3/5 2xl:w-1/2 h-full text-dark-gray hover:text-black' />
