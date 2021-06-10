@@ -1,4 +1,3 @@
-import { Transition } from '@headlessui/react'
 import { urlFor } from 'utils/sanity'
 import { CgClose } from 'react-icons/cg'
 
