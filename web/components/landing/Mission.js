@@ -8,7 +8,7 @@ const Mission = ({ data }) => {
 
   const { heading, intro, image, outro } = data
   return (
-    <section>
+    <section id='mission'>
       <div className='flex flex-col items-center md:justify-between sm:h-screen max-h-800 relative py-20 md:py-0 md:pt-12 xl:pt-20'>
         <div className='w-container z-10'>
           <div className='-mx-8 md:flex'>

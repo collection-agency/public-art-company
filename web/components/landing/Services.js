@@ -9,7 +9,7 @@ const Services = ({ data }) => {
   const { heading, services } = data
 
   return (
-    <section className='border-t border-black'>
+    <section id='services' className='border-t border-black'>
       <div className='w-container mx-auto mb-20 lg:mb-0'>
         <div className='flex flex-col lg:flex-row -mx-8'>
           <div className='px-8 pb-12 pt-20 lg:py-24 xl:py-28 2xl:py-36'>

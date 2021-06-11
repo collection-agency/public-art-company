@@ -65,7 +65,7 @@ const Hero = ({ data }) => {
   const { headline, image, intro } = data
 
   return (
-    <section className='relative text-center' ref={ref}>
+    <section id='hero' className='relative text-center' ref={ref}>
       <div id='hero-image' className='absolute top-0 left-0 right-0 bg-cover bg-center' style={{
         backgroundImage: `url(${imageUrl(image, 1920, 1080)})`,
       }}></div>

@@ -9,7 +9,7 @@ const Clients = ({ data }) => {
 
   const { heading, text, logos } = data
   return (
-    <section className='py-20'>
+    <section id='clients' className='py-20'>
       <div className='w-container mx-auto md:mb-20'>
         <div className='-mx-8 md:flex'>
           <div className='px-8 pb-12'>

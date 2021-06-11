@@ -8,7 +8,7 @@ const About = ({ data }) => {
   const { text } = data
 
   return (
-    <section className='border-t border-black'>
+    <section id='about' className='border-t border-black'>
       <div className='w-container mx-auto'>
         <div className='py-20 lg:py-24 xl:py-28 2xl:py-36'>
           {text &&

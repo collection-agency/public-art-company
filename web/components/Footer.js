@@ -13,7 +13,7 @@ const Footer = ({ config }) => {
   } = config
 
   return (
-    <footer className='bg-dark-gray text-white py-20'>
+    <footer id='contact' className='bg-dark-gray text-white py-20'>
       <div className='w-container mx-auto'>
         <div className='pb-10 border-b border-white mb-6'>
           <div className='flex justify-between -mx-6'>

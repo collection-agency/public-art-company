@@ -9,7 +9,7 @@ const Story = ({ data }) => {
   const { heading, text, image } = data
 
   return (
-    <section className='border-t border-black'>
+    <section id='story' className='border-t border-black'>
       <div className='md:w-container md:mx-auto'>
         <div className='md:w-full md:flex'>
           <div className='w-container mx-auto md:w-1/2 md:flex md:-mx-8 pt-20 pb-12 lg:py-24 xl:py-28 2xl:py-36'>
