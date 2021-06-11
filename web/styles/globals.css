@@ -104,6 +104,14 @@ html, body {
   }
 
   @variants responsive {
+    .text-shadow {
+      text-shadow: 0 0 1px #F2F0EC;
+    }
+
+    .text-shadow-none {
+      text-shadow: none;
+    }
+
     .text-columns-2 {
       column-count: 2;
       column-gap: 2rem;

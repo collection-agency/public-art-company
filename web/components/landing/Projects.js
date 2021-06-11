@@ -12,7 +12,7 @@ const Projects = ({ data }) => {
   const [sectionHeadline, setSectionHeadline] = useState(headline)
 
   return (
-    <section className='md:border-t border-black py-20'>
+    <section className='md:border-t border-black py-20 lg:py-24 xl:py-28 2xl:py-36'>
       <div className='w-container mx-auto mb-12'>
         <div className='flex flex-col md:flex-row -mx-8'>
           <div className='px-8 pb-12'>

@@ -25,6 +25,9 @@ module.exports = {
         'cream': '#F2F0EC',
         'dark-gray': '#424242',
       },
+      minHeight: {
+        '600': '600px',
+      },
       maxHeight: {
         '800': '800px',
       },

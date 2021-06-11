@@ -30,7 +30,7 @@ const ServicesCarousel = ({ items }) => {
           {items.map(item => {
             const { _key, text } = item
             return (
-              <SwiperSlide key={`${_key}_b`} className='swiper-no-swiping pb-12 lg:pb-0 lg:pt-24 xl:pt-28 2xl:pt-36 bg-cream self-stretch min-h-0'>
+              <SwiperSlide key={`${_key}_b`} className='swiper-no-swiping pb-12 lg:py-24 xl:py-28 2xl:py-36 bg-cream self-stretch min-h-0'>
                 {text &&
                   <PortableText blocks={text} className='mx-auto w-full md:w-3/4 lg:w-full xl:w-4/5 2xl:w-2/3 md:mb-12' renderContainerOnSingleChild />
                 }

@@ -12,7 +12,7 @@ const Story = ({ data }) => {
     <section className='border-t border-black'>
       <div className='md:w-container md:mx-auto'>
         <div className='md:w-full md:flex'>
-          <div className='w-container mx-auto md:w-1/2 md:flex md:-mx-8 pt-20 pb-12'>
+          <div className='w-container mx-auto md:w-1/2 md:flex md:-mx-8 pt-20 pb-12 lg:py-24 xl:py-28 2xl:py-36'>
             <div className='md:px-8 pb-12'>
               <h2 className='uppercase font-sans text-lg'>{heading}</h2>
             </div>
@@ -22,7 +22,7 @@ const Story = ({ data }) => {
               }
             </div>
           </div>
-          <div className='w-full h-96 md:h-auto md:w-1/2 self-stretch md:ml-16'>
+          <div className='w-full h-96 md:h-auto md:w-1/2 self-stretch md:ml-16 xl:min-h-600'>
             <div
               className='bg-cover bg-center w-full h-full'
               style={{ backgroundImage: `url(${imageUrl(image, 960, 960)})` }}

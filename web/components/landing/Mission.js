@@ -9,7 +9,7 @@ const Mission = ({ data }) => {
   const { heading, intro, image, outro } = data
   return (
     <section>
-      <div className='flex flex-col items-center md:justify-between sm:h-screen max-h-800 relative py-20 md:py-0 md:pt-12'>
+      <div className='flex flex-col items-center md:justify-between sm:h-screen max-h-800 relative py-20 md:py-0 md:pt-12 xl:pt-20'>
         <div className='w-container z-10'>
           <div className='-mx-8 md:flex'>
             <div className='px-8 md:w-1/5 xl:w-1/3 pb-12'>
@@ -24,10 +24,17 @@ const Mission = ({ data }) => {
           </div>
         </div>
         {image &&
-          <div className='h-72 w-container bg-cover bg-center md:h-full md:w-full md:absolute md:inset-0 z-0 mb-12' style={{ backgroundImage: `url(${imageUrl(image, 1920, 800)})` }} role='img' aria-label={image && image.alt}></div>
+          <div
+            className='h-72 w-container bg-cover bg-center md:h-full md:w-full md:absolute md:inset-0 z-0 mb-12'
+            style={{ backgroundImage: `url(${imageUrl(image, 1920, 800)})` }}
+            role='img'
+            aria-label={image && image.alt}>
+            <div className='hidden md:block absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-cream to-transparent opacity-100'></div>
+            <div className='hidden md:block absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-cream to-transparent opacity-100'></div>
+          </div>
         }
         {outro &&
-          <div className='w-container z-10'>
+          <div className='w-container z-10 mx-auto xl:w-3/5 max-w-screen-lg'>
             <PortableText blocks={outro} renderContainerOnSingleChild className='text-center text-lg md:text-4xl font-sans' />
           </div>
         }
