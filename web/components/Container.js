@@ -1,6 +1,6 @@
-const Container = ({ children }) => {
+const Container = ({ children, className }) => {
   return (
-    <div className='container mx-auto'>{children}</div>
+    <div className={`container mx-auto ${(className ? className : '')}`}>{children}</div>
   )
 }
 
