@@ -76,7 +76,7 @@ const Hero = ({ data }) => {
           top: '40vh',
         }}><img src='/pac-logo-light.svg' className='max-w-screen-lg mx-auto' /></div>
         <div id='hero-headline' className='w-container max-w-screen-lg mx-auto pt-24'>
-          <p className='text-7xl uppercase font-sans'>{headline}</p>
+          <p className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl uppercase font-sans'>{headline}</p>
         </div>
         <div id='hero-intro' className='w-container mx-auto sm:w-3/4 md:w-1/2' style={{
           marginTop: '50vh'
