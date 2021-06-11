@@ -13,25 +13,20 @@ const Header = () => {
   }
 
   useEffect(() => {
-    if (windowSize) {
-      const handleScroll = () => {
-        const currentScrollY = window.scrollY
-        if ((currentScrollY < (windowSize.height * .5)) && isVisible) {
-          setIsVisible(false)
-        }
-        if ((currentScrollY > (windowSize.height * .5)) && !isVisible) {
-          setIsVisible(true)
-        }
-        console.log(isVisible, currentScrollY, windowSize.height)
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      if ((currentScrollY < (windowSize.height * .5)) && isVisible) {
+        setIsVisible(false)
       }
-
-      window.addEventListener('scroll', handleScroll, { passive: true })
-
-      return () => window.removeEventListener('scroll', handleScroll)
+      if ((currentScrollY > (windowSize.height * .5)) && !isVisible) {
+        setIsVisible(true)
+      }
     }
 
-    return null
-  }, [isVisible])
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [windowSize, isVisible])
 
   return (
     <header className='fixed inset-0 pointer-events-none z-40'>
