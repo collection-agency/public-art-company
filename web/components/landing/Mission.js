@@ -9,7 +9,7 @@ const Mission = ({ data }) => {
   const { heading, intro, image, outro } = data
   return (
     <section id='mission'>
-      <div className='flex flex-col items-center md:justify-between sm:h-screen max-h-800 relative py-20 md:py-0 md:pt-12 xl:pt-20'>
+      <div className='flex flex-col items-center md:justify-between sm:h-screen max-h-800 relative py-20 md:py-0 md:pt-12 xl:pt-20 md:text-white'>
         <div className='w-container z-10'>
           <div className='-mx-8 md:flex'>
             <div className='px-8 md:w-1/5 xl:w-1/3 pb-12'>
@@ -29,8 +29,8 @@ const Mission = ({ data }) => {
             style={{ backgroundImage: `url(${imageUrl(image, 1920, 800)})` }}
             role='img'
             aria-label={image && image.alt}>
-            <div className='hidden md:block absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-cream to-transparent opacity-100'></div>
-            <div className='hidden md:block absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-cream to-transparent opacity-100'></div>
+            <div className='hidden md:block absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-dark-gray to-transparent opacity-80'></div>
+            <div className='hidden md:block absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-dark-gray to-transparent opacity-80'></div>
           </div>
         }
         {outro &&
