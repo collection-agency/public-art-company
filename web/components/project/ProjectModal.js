@@ -29,8 +29,11 @@ const ProjectModal = ({ doc, isActive, closeModal }) => {
           <div className='md:w-1/3'>
             <CgArrowLongLeft className='cursor-pointer w-10 h-auto text-dark-gray hover:text-black' onClick={closeModal}/>
           </div>
-          <div className='flex-1 text-center font-sans uppercase'>
-            <span>Public Art Co.</span>
+          <div className='flex-1 font-sans uppercase'>
+            <img
+              src='/pac-logo-dark.svg'
+              className='cursor-pointer h-4 mx-auto'
+              onClick={closeModal} />
           </div>
           <div className='w-1/3 hidden md:block'>&nbsp;</div>
         </div>
