@@ -6,7 +6,7 @@ const Layout = ({ children, config }) => {
   return (
     <div className='overflow-x-hidden'>
       <Header config={config} />
-      <main>{children}</main>
+      <main className='relative'>{children}</main>
       <Footer config={config} />
       {process.env.NODE_ENV === 'development' &&
         <Breakpoint />

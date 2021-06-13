@@ -14,6 +14,7 @@ import Services from 'components/landing/Services'
 import About from 'components/landing/About'
 import Clients from 'components/landing/Clients'
 import Mission from 'components/landing/Mission'
+import Trees from 'components/landing/Trees'
 
 const query = groq`
   *[_type == 'landing'][0] {
@@ -45,6 +46,7 @@ const Landing = ({ doc, config }) => {
           <About data={doc.about} />
           <Clients data={doc.clients} />
           <Mission data={doc.mission} />
+          <Trees />
         </>
       }
     </Layout>
