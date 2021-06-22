@@ -23,13 +23,9 @@ const Footer = ({ config }) => {
                 <PortableText blocks={footer.text} renderContainerOnSingleChild className='hidden md:block'/>
               }
             </div>
-            {footer && footer.graphic &&
-              <div className='flex-none px-6'>
-                <img src={urlFor(footer.graphic).url()} style={{
-                  maxWidth: '115px'
-                }} />
-              </div>
-            }
+            <div className='flex-none px-6'>
+              <img src={footer && footer.graphic ? urlFor(footer.graphic).url() : '/pac-logo-crest.svg'} className='w-32'/>
+            </div>
           </div>
           {footer && footer.text &&
             <PortableText blocks={footer.text} renderContainerOnSingleChild className='w-full mt-20 md:hidden'/>
