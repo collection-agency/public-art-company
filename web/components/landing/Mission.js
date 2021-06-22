@@ -34,7 +34,7 @@ const Mission = ({ data }) => {
           </div>
         }
         {outro &&
-          <div className='w-container z-10 mx-auto xl:w-3/5 max-w-screen-lg'>
+          <div className='w-container z-10 mx-auto md:mb-8 xl:w-3/5 max-w-screen-lg'>
             <PortableText blocks={outro} renderContainerOnSingleChild className='text-center text-lg md:text-4xl font-sans' />
           </div>
         }
