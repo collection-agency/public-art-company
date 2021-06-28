@@ -32,9 +32,11 @@ const Trees = () => {
         element.querySelector('#tree-1'),
         {
           skewX: -30,
+          translateX: '66%',
         },
         {
           skewX: 50,
+          translateX: '66%',
           scrollTrigger: {
             scrub: true,
             start: 0,
@@ -46,9 +48,11 @@ const Trees = () => {
         element.querySelector('#tree-2'),
         {
           skewX: 30,
+          translateX: '-66%',
         },
         {
           skewX: -50,
+          translateX: '-66%',
           scrollTrigger: {
             scrub: true,
             start: windowSize.height * 2,
@@ -60,9 +64,11 @@ const Trees = () => {
         element.querySelector('#tree-3'),
         {
           skewX: -30,
+          translateX: '66%',
         },
         {
           skewX: 50,
+          translateX: '66%',
           scrollTrigger: {
             scrub: true,
             start: windowSize.height * 4,
@@ -85,8 +91,8 @@ const Trees = () => {
         }}/>*/}
       <img
         id='tree-1'
-        src='/trees/palm_02.svg'
-        className='absolute right-0 transform translate-x-2/3 h-600 origin-bottom'
+        src='/trees/palm_01.svg'
+        className='absolute right-0 transform h-600 origin-bottom'
         style={{
           height: '600px',
           top: '100vh'
@@ -94,7 +100,7 @@ const Trees = () => {
       <img
         id='tree-2'
         src='/trees/palm_02.svg'
-        className='absolute left-0 transform -translate-x-2/3 h-600 origin-bottom'
+        className='absolute left-0 transform h-600 origin-bottom'
         style={{
           height: '600px',
           top: '300vh'
@@ -102,7 +108,7 @@ const Trees = () => {
       <img
         id='tree-3'
         src='/trees/palm_02.svg'
-        className='absolute right-0 transform translate-x-2/3 h-600 origin-bottom'
+        className='absolute right-0 transform h-600 origin-bottom'
         style={{
           height: '600px',
           top: '500vh'
