@@ -91,7 +91,7 @@ const Trees = () => {
         }}/>*/}
       <img
         id='tree-1'
-        src='/trees/palm_01.svg'
+        src='/trees/tree_002.svg'
         className='absolute right-0 transform h-600 origin-bottom'
         style={{
           height: '600px',
