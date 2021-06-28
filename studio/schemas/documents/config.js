@@ -72,7 +72,7 @@ export default {
         {
           name: 'graphic',
           type: 'image',
-          title: 'Graphic',
+          title: 'Crest',
         },
       ]
     },
