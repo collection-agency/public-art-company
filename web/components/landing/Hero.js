@@ -18,11 +18,10 @@ const Hero = ({ data }) => {
     gsap.fromTo(
       element.querySelector('#hero-image'),
       {
-        height: '100vh',
         translateY: '0vh'
       },
       {
-        height: '70vh',
+        translateY: '-30vh',
         scrollTrigger: {
           scrub: true,
           start: 0,
@@ -66,7 +65,7 @@ const Hero = ({ data }) => {
 
   return (
     <section id='hero' className='relative text-center' ref={ref}>
-      <div id='hero-image' className='absolute top-0 left-0 right-0 bg-cover bg-center' style={{
+      <div id='hero-image' className='absolute top-0 left-0 right-0 bg-cover bg-center h-screen' style={{
         backgroundImage: `url(${imageUrl(image, 1920, 1080)})`,
       }}></div>
       <div className='relative' style={{
