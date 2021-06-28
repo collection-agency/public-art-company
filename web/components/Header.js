@@ -37,32 +37,50 @@ const Header = () => {
               <li>
                 <span
                   className='cursor-pointer -mb-1 block'
-                  onClick={() => handleScrollTo('story')}>Story</span>
+                  onClick={() => {
+                    setShowMenu(false)
+                    handleScrollTo('story')
+                  }}>Story</span>
               </li>
               <li>
                 <span
                   className='cursor-pointer -mb-1 block'
-                  onClick={() => handleScrollTo('projects')}>Projects</span>
+                  onClick={() => {
+                    setShowMenu(false)
+                    handleScrollTo('projects')
+                  }}>Projects</span>
               </li>
               <li>
                 <span
                   className='cursor-pointer -mb-1 block'
-                  onClick={() => handleScrollTo('services')}>Services</span>
+                  onClick={() => {
+                    setShowMenu(false)
+                    handleScrollTo('services')
+                  }}>Services</span>
               </li>
               <li>
                 <span
                   className='cursor-pointer -mb-1 block'
-                  onClick={() => handleScrollTo('clients')}>Clients</span>
+                  onClick={() => {
+                    setShowMenu(false)
+                    handleScrollTo('clients')
+                  }}>Clients</span>
               </li>
               <li>
                 <span
                   className='cursor-pointer -mb-1 block'
-                  onClick={() => handleScrollTo('mission')}>Mission</span>
+                  onClick={() => {
+                    setShowMenu(false)
+                    handleScrollTo('mission')
+                  }}>Mission</span>
               </li>
               <li>
                 <span
                   className='cursor-pointer -mb-1 block'
-                  onClick={() => handleScrollTo('contact')}>Contact</span>
+                  onClick={() => {
+                    setShowMenu(false)
+                    handleScrollTo('contact')
+                  }}>Contact</span>
               </li>
             </ul>
           </Container>
